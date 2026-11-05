@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taules - Apunts de llenguatges de marques</title>
+</head>
+<body>
+    <p><a href="../index.html">&larr; Tornar a l'índex</a></p>
+    <h1>Taules</h1>
+<ul>
+    <li><code>&lt;table&gt;</code>: contenidor principal de la taula.</li>
+    <li><code>&lt;tr&gt;</code> (table row): una fila.</li>
+    <li><code>&lt;td&gt;</code> (table data): una cel·la de dades.</li>
+    <li><code>&lt;th&gt;</code> (table header): cel·la d'encapçalament (negreta i centrada per defecte).</li>
+    <li><code>&lt;thead&gt;</code>: agrupa les files d'encapçalament.</li>
+    <li><code>&lt;tbody&gt;</code>: agrupa les files de dades (el cos).</li>
+</ul>
+<h2>Atributs de taula</h2>
+<ul>
+    <li><code>border</code>: vora de la taula i de les cel·les.</li>
+    <li><code>cellpadding</code>: espai entre el contingut i la vora de la cel·la.</li>
+    <li><code>cellspacing</code>: espai entre cel·les.</li>
+</ul>
+<pre><code>&lt;table border="1" cellpadding="10" cellspacing="5"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Producte&lt;/th&gt;&lt;th&gt;Preu&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Poma&lt;/td&gt;&lt;td&gt;1.50€&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Plàtan&lt;/td&gt;&lt;td&gt;1.00€&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<h2>Bones pràctiques</h2>
+<ul>
+    <li>Usar <code>&lt;thead&gt;</code> i <code>&lt;tbody&gt;</code>, sobretot en taules grans.</li>
+    <li>Mantenir les taules simples i deixar el disseny avançat per al CSS.</li>
+</ul>
+    <hr>
+    <p><a href="../index.html">&larr; Tornar a l'índex</a></p>
+</body>
+</html>

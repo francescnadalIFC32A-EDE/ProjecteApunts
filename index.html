@@ -8,146 +8,41 @@
 <body>
     <h1>Apunts de llenguatges de marques</h1>
     <img src="imatge1.jpg" alt="Mi imagen">
-     <p>Francesc Nadal Quetglas</p>
+    <p>Francesc Nadal Quetglas</p>
     <p>En aquesta pàgina trobaràs una introducció als llenguatges de marques i a alguns conceptes relacionats amb el web.</p>
 
-<h2>altres documents</h2>
-<p>
-    <a href="curriculum" target="_blank">
-        obrir el curriculum
-    </a>
-</p>
-    <h2>Índex</h2>
+    <h2>Altres documents</h2>
+    <p><a href="curriculum" target="_blank">Obrir el currículum</a></p>
+
+    <h2>Part bàsica: HTML</h2>
+    <p>Etiquetes, atributs, text, imatges, enllaços, llistes i taules.</p>
     <ul>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#xml">XML</a></li>
-        <li><a href="#json">JSON</a></li>
-        <li><a href="#http">HTTP</a></li>
-        <li><a href="#accessibilitat">Accessibilitat web</a></li>
-        <li><a href="#svg">SVG</a></li>
-        <li><a href="#api">APIs web</a></li>
+        <li><a href="basic/01-introduccio.html">Introducció a HTML</a></li>
+        <li><a href="basic/02-estructura.html">Estructura bàsica d'un document HTML</a></li>
+        <li><a href="basic/03-etiquetes-basiques.html">Etiquetes bàsiques</a></li>
+        <li><a href="basic/04-elements-anidament.html">Elements HTML i anidament</a></li>
+        <li><a href="basic/05-atributs.html">Atributs HTML</a></li>
+        <li><a href="basic/06-text-formatat.html">Text formatat</a></li>
+        <li><a href="basic/07-comentaris.html">Comentaris en HTML</a></li>
+        <li><a href="basic/08-imatges.html">Inserció d'imatges</a></li>
+        <li><a href="basic/09-enllacos.html">Enllaços</a></li>
+        <li><a href="basic/10-llistes.html">Llistes</a></li>
+        <li><a href="basic/11-taules.html">Taules</a></li>
+    </ul>
+
+    <h2>Part avançada</h2>
+    <p>Altres llenguatges i conceptes relacionats amb el web.</p>
+    <ul>
+        <li><a href="avancat/01-css.html">CSS</a></li>
+        <li><a href="avancat/02-xml.html">XML</a></li>
+        <li><a href="avancat/03-json.html">JSON</a></li>
+        <li><a href="avancat/04-http.html">HTTP</a></li>
+        <li><a href="avancat/05-accessibilitat.html">Accessibilitat web</a></li>
+        <li><a href="avancat/06-svg.html">SVG (ampliació)</a></li>
+        <li><a href="avancat/07-api.html">APIs web (ampliació)</a></li>
     </ul>
 
     <hr>
-    <img src="">
-    <h2 id="html">1. HTML</h2>
-    <p>HTML és el llenguatge que s'utilitza per crear l'estructura d'una pàgina web. Permet afegir títols, paràgrafs, imatges, enllaços i llistes.</p>
-    <p>Exemple:</p>
-    <pre><code>&lt;h1&gt;Hola!&lt;/h1&gt;
-&lt;p&gt;Aquesta és una pàgina web.&lt;/p&gt;</code></pre>
-    <section id="etiquetes-basiques">
-  <h2> Etiquetes bàsiques</h2>
-  <ul>
-    <li><code>&lt;title&gt;</code>: títol que apareix a la pestanya del navegador i als cercadors.</li>
-    <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: títols i subtítols.</li>
-    <li><code>&lt;p&gt;</code>: paràgrafs o blocs de text.</li>
-    <li><code>&lt;br&gt;</code>: força un salt de línia.</li>
-    <li><code>&amp;nbsp;</code>: espai en blanc que no es trenca entre línies.</li>
-  </ul>
-  <pre><code>&lt;h1&gt;Títol 1&lt;/h1&gt;
-&lt;p&gt;Aquest és un paràgraf.&lt;/p&gt;
-&lt;p&gt;Aquest text es dividirà&lt;br&gt;en dues línies.&lt;/p&gt;
-&lt;p&gt;Aquesta és la frase "12&amp;nbsp;homes".&lt;/p&gt;</code></pre>
-</section>
-section id="atributs">
-  <h2>Atributs HTML</h2>
-  <p>Els atributs afegeixen informació extra a les etiquetes per modificar-ne el comportament o l'aparença. Sempre van dins l'etiqueta d'obertura amb el format <code>nom="valor"</code>.</p>
-  <ul>
-    <li><code>id</code>: identificador únic de l'element.</li>
-    <li><code>class</code>: classe per aplicar estils a diversos elements.</li>
-    <li><code>style</code>: estils CSS directament a l'element.</li>
-    <li><code>title</code>: informació addicional en passar el ratolí per sobre.</li>
-    <li><code>src</code>, <code>alt</code>, <code>href</code>: propis d'imatges i enllaços.</li>
-  </ul>
-  <pre><code>&lt;h1 id="titol"&gt;Títol 1&lt;/h1&gt;
-&lt;h2 class="important"&gt;Títol 2&lt;/h2&gt;
-&lt;h3 style="color: blue; text-align: center;"&gt;Títol 3&lt;/h3&gt;
-&lt;h4 title="Informació addicional"&gt;Títol 4&lt;/h4&gt;</code></pre>
-</section>
-<section id="comentaris">
-  <h2>Comentaris</h2>
-  <p>Els comentaris són notes dins el codi que <strong>no es veuen</strong> a la pàgina i no afecten el rendiment. Serveixen per documentar el codi, descriure seccions o desactivar codi temporalment.</p>
-  <pre><code>&lt;!-- Aquesta secció és el capçal de la pàgina --&gt;
-&lt;!-- TODO: afegir un formulari de contacte --&gt;</code></pre>
-  <h3>Bones pràctiques</h3>
-  <ul>
-    <li>Mantenir-los clars i concisos.</li>
-    <li>Evitar-ne massa: només on calgui.</li>
-    <li>No deixar comentaris innecessaris en producció.</li>
-  </ul>
-</section>
-<section id="imatges">
-  <h2>Inserció d'imatges</h2>
-  <p>L'etiqueta <code>&lt;img&gt;</code> insereix imatges. <strong>No té etiqueta de tancament</strong> (és auto-tancada).</p>
-  <ul>
-    <li><code>src</code>: font o camí de la imatge (relatiu o URL completa).</li>
-    <li><code>alt</code>: text alternatiu per a lectors de pantalla, SEO i quan la imatge no carrega.</li>
-    <li><code>width</code> i <code>height</code>: amplada i alçada (píxels o percentatges).</li>
-  </ul>
-  <pre><code>&lt;img src="imatge.jpg" alt="Descripció de la imatge" width="400" height="300"&gt;
-&lt;img src="imatge.jpg" alt="Imatge adaptada" style="width: 100%;"&gt;</code></pre>
-  <h3>Bones pràctiques</h3>
-  <ul>
-    <li>Posar sempre l'atribut <code>alt</code>.</li>
-    <li>No inserir imatges molt grans sense reduir-ne la mida.</li>
-    <li>En disseny responsiu, usar percentatges en lloc de píxels.</li>
-  </ul>
-</section>
-    <h2 id="css">2. CSS</h2>
-    <p>CSS serveix per canviar l'aparença d'una pàgina web, com ara els colors, les mides de lletra i la distribució dels elements.</p>
-    <p>Exemple:</p>
-    <pre><code>body {
-    font-family: Arial, sans-serif;
-    color: black;
-}</code></pre>
-    
-
-    <h2 id="xml">3. XML</h2>
-    <p>XML és un llenguatge de marques que permet guardar i organitzar dades amb etiquetes pròpies.</p>
-    <p>Exemple:</p>
-    <pre><code>&lt;llibre&gt;
-    &lt;titol&gt;El meu llibre&lt;/titol&gt;
-    &lt;autor&gt;Anna&lt;/autor&gt;
-&lt;/llibre&gt;</code></pre>
-
-    <h2 id="json">4. JSON</h2>
-    <p>JSON és un format de text que s'utilitza per intercanviar dades entre aplicacions.</p>
-    <p>Exemple:</p>
-    <pre><code>{
-    "nom": "Anna",
-    "edat": 18
-}</code></pre>
-
-    <h2 id="http">5. HTTP</h2>
-    <p>HTTP és un protocol que permet que el navegador i el servidor es comuniquin per carregar pàgines i altres recursos web.</p>
-    <ul>
-        <li><strong>GET:</strong> demana informació.</li>
-        <li><strong>POST:</strong> envia informació.</li>
-        <li><strong>404:</strong> el recurs no s'ha trobat.</li>
-    </ul>
-
-    <h2 id="accessibilitat">6. Accessibilitat web</h2>
-    <p>L'accessibilitat web consisteix a crear pàgines que puguin utilitzar persones amb diferents capacitats.</p>
-    <ul>
-        <li>Utilitzar títols ordenats.</li>
-        <li>Afegir text alternatiu a les imatges importants.</li>
-        <li>Fer que els enllaços tinguin noms clars.</li>
-        <li>Permetre navegar amb el teclat.</li>
-    </ul>
-
-    <h2 id="svg">7. SVG (ampliació)</h2>
-    <p>SVG és un format de gràfics vectorials que es pot ampliar sense perdre qualitat. S'utilitza per a icones, logotips i dibuixos.</p>
-    <p>Exemple:</p>
-    <pre><code>&lt;svg width="100" height="100"&gt;
-    &lt;circle cx="50" cy="50" r="40" fill="blue" /&gt;
-&lt;/svg&gt;</code></pre>
-
-    <h2 id="api">8. APIs web (ampliació)</h2>
-    <p>Una API permet que dos programes es comuniquin i intercanviïn dades. Moltes APIs web utilitzen HTTP i envien dades en format JSON.</p>
-
-    <hr>
-
     <h2>Relació entre els conceptes</h2>
     <p>HTML crea l'estructura de la pàgina i CSS en canvia l'aparença. HTTP permet carregar els recursos. JSON i XML serveixen per organitzar dades. SVG permet mostrar gràfics, i les APIs faciliten l'intercanvi d'informació. L'accessibilitat s'ha de tenir en compte en tot el projecte.</p>
 
