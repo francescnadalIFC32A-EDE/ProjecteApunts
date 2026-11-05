@@ -77,6 +77,23 @@ section id="atributs">
     <li>No deixar comentaris innecessaris en producció.</li>
   </ul>
 </section>
+<section id="imatges">
+  <h2>Inserció d'imatges</h2>
+  <p>L'etiqueta <code>&lt;img&gt;</code> insereix imatges. <strong>No té etiqueta de tancament</strong> (és auto-tancada).</p>
+  <ul>
+    <li><code>src</code>: font o camí de la imatge (relatiu o URL completa).</li>
+    <li><code>alt</code>: text alternatiu per a lectors de pantalla, SEO i quan la imatge no carrega.</li>
+    <li><code>width</code> i <code>height</code>: amplada i alçada (píxels o percentatges).</li>
+  </ul>
+  <pre><code>&lt;img src="imatge.jpg" alt="Descripció de la imatge" width="400" height="300"&gt;
+&lt;img src="imatge.jpg" alt="Imatge adaptada" style="width: 100%;"&gt;</code></pre>
+  <h3>Bones pràctiques</h3>
+  <ul>
+    <li>Posar sempre l'atribut <code>alt</code>.</li>
+    <li>No inserir imatges molt grans sense reduir-ne la mida.</li>
+    <li>En disseny responsiu, usar percentatges en lloc de píxels.</li>
+  </ul>
+</section>
     <h2 id="css">2. CSS</h2>
     <p>CSS serveix per canviar l'aparença d'una pàgina web, com ara els colors, les mides de lletra i la distribució dels elements.</p>
     <p>Exemple:</p>
